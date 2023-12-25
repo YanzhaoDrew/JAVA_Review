@@ -45,12 +45,12 @@ interface Flyable{//接口
 1. **分时调度**与**抢占式调度**
 2. **并行**与**并发**
 ### 线程的创建
-#### [方式一](ThreadTest.java)
+#### [方式一](src/Review/ThreadTest.java)
 1. 创建一个继承于Thread类的子类
 2. 重写Thread类的run() --->将此线程要执行的操作，声明在此方法体中
 3. 创建当前Thread的子类的对象
 4. 通过对象调用start()
-#### [方式二](ThreadTest.java)
+#### [方式二](src/Review/ThreadTest.java)
 1. 创建一个实现Runnable接口的类
 2. 实现接口中的run() --->将此线程要执行的操作，声明在此方法体中
 3. 创建当前实现类的对象
@@ -81,9 +81,9 @@ interface Flyable{//接口
   * NORM_PRIORITY(5): 普通优先级，默认情况下main线程具有普通优先集。
 * setPriority(): 设置线程的优先级。范围[1,10]
 #### 多线程的生命周期
-![生命周期图](Life.jpg)
+![生命周期图](src/Review/Life.jpg)
 
-### [List](ListTest.java)
+### [List](src/Review/ListTest.java)
 1. List接口中存储数据的特点: 用于存储有序的、可以重复的数据。---> 使用List替代数组，“动态”数组
 2. List中的常用方法
    1. Collection声明的15个方法.
@@ -95,7 +95,7 @@ interface Flyable{//接口
       5. 长度: size()
       6. 遍历: iterator(): 使用迭代器进行遍历, 增强for循环，一般的for循环
 
-### [Map](MapTest.java)
+### [Map](src/Review/MapTest.java)
 1. 主要实现类：HashMap
 2. HashMap中元素的特点
    1. key用Set来存放，不允许重复,无序的 ---> key所在的类要重写hashCode()和equals()
@@ -149,7 +149,7 @@ list = list2;
 list = list3;
 ```
 
-### [File类和IO流](FileTest.java)
+### [File类和IO流](src/Review/FileTest.java)
 > File类位于java.io包下，本章中涉及的相关流也都声明在java.io包下.  
 > File类的一个对象，对应与操作系统下的一个文件或一个文件目录(或文件夹)  
 > File类中声明了新建、删除、获取名称、重命名等方法，并没有涉及到文件内容的读写操作。  
@@ -159,7 +159,7 @@ list = list3;
    * public String[] list(): 返回一个String数组，表示该File目录中的所有子文件或目录
    * public File[] listFiles(): 返回一个File数组，表示该File目录中的所有的子文件或目录
 2. 结合递归
-   * [Exer_01](RecurTestFile.java): 遍历指定文件目录下的所有文件的名称，包括子文件目录中的文件
+   * [Exer_01](src/Review/RecurTestFile.java): 遍历指定文件目录下的所有文件的名称，包括子文件目录中的文件
 #### IO流
 * IO流的分类
   * 流向的不同：输入流，输出流
@@ -176,7 +176,7 @@ list = list3;
   * 读入: read(char[] cbuffer)
   * 写出: write(String str) or write(char[] cbuffer, 0, len)
 
-| 抽象基类         | 4个节点流（也称为[文件流](FileReaderWriterTest.java)） |
+| 抽象基类         | 4个节点流（也称为[文件流](src/Review/FileReaderWriterTest.java)） |
 |--------------|---------------------|
 | InputStream  | FileInputStream     |
 | OutputStream | FIleOutputStream    |

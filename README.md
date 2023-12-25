@@ -184,4 +184,4 @@ list = list3;
 | Writer       | FileWriter          |
 > 注意点： 写出文件的时候，如果此文件不存在，会自动创建此文件
 * 对于图片jpg文件，字节文件，无法用ReaderOrWriter去读或者写
-  * 因此使用[字节流]()
+  * 因此使用[字节流](src/Review/FileStreamTest.java)

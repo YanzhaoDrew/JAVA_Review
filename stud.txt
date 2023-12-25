@@ -1,0 +1,25 @@
+Student ID: 46
+Name: 46
+Grades: 46.0, 646.0, 46.0
+Average: 246.0
+
+Student ID: 46
+Name: 646
+Grades: 46.0, 646.0, 646.0
+Average: 446.0
+
+Student ID: 646
+Name: 646
+Grades: 646.0, 6.0, 46.0
+Average: 232.66666666666666
+
+Student ID: 646
+Name: 64
+Grades: 64.0, 46.0, 64.0
+Average: 58.0
+
+Student ID: 64
+Name: 646
+Grades: 646.0, 646.0, 646.0
+Average: 646.0
+
